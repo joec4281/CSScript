@@ -1,0 +1,8 @@
+cdd E:\Documents\github\CsScript
+dir .\bin\Release\CsScript.dll 
+plugin /l bin\Release\CsScript.dll 
+dir template.csx 
+plugin /i CsScript
+CsScript template.csx 
+CsScript template.csx 10 20 
+plugin /u CsScript

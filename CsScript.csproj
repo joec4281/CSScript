@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>disable</Nullable>
+    <OutputPath>bin\Release\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>CsScript</AssemblyName>
+    <!-- Disable globbing default compile items to avoid accidentally compiling extra .cs files -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Explicitly include only the intended source files -->
+    <Compile Include="CsScript.cs" />
+    <Compile Include="DotNetPluginSDK.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="TestPlugin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Reference the host assembly if present in the project folder -->
+    <Reference Include="TC-DotNetPluginHost64">
+      <HintPath>TC-DotNetPluginHost64.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

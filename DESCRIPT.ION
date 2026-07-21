@@ -1,0 +1,7 @@
+"AssemblyInfo.cs" Assembly Information for CSScript plugin
+"CsScript.cs" C# Source Code for CSScript
+"CsScript.csproj" Project File for CSScript plugin
+"CsScript.sln" Solution File for CSScript plugin
+"DotNetPluginSDK.cs" .NET Plugin SDK for TCC
+"template.csx" A template C# file, for testing CSScript plugin
+"test_template.btm" A .btm that runs the template.csx file using CSScript
