@@ -21,7 +21,7 @@ Review template.csx for examples of C# code that can be run with CSScript.
 For an intro to writing .NET plugins for TCC;  
 Review https://jpsoft.com/help/_net-plugins.htm
 
-For an intro to calling TCC command from .NET plugins; 
+For an intro to calling TCC command from .NET plugins;  
 Review https://jpsoft.com/help/_net-plugins-calling-tcc-comma.htm
 
 
